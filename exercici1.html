@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+            grid-template-rows: 1fr 2fr 1fr;
+            height: 100vh;
+        }
+        .header {
+            grid-area: header;
+            background-color: #4682B4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .main {
+            grid-area: main;
+            background-color: #00FFFF;
+            padding: 20px;
+            text-align: center;
+        }
+        .aside {
+            grid-area: aside;
+            background-color: #90EE90;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #F5DEB3;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">Main</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
