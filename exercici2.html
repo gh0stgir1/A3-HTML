@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulari</title>
+    <style>
+        .form-container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-        <td>Nom</td>
-        <td><input type=text name=fn placeholder="Nom"></td>
-        </tr><tr>
-        <td>Correu electronic</td>
-        <td><input type=text name=ln placeholder="Correu electronic"></td>
-        </tr> <tr>
-        <td>Missatge</td>
-        <td><input type=text name=Missatge></td>
-        </tr><tr>
-        <td></td>
-        <td><input type=submit value=enviar></td>
-    </table>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="fn">Nom</label></td>
+                    <td><input type="text" id="fn" name="fn" placeholder="Nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="ln">Correu electrònic</label></td>
+                    <td><input type="text" id="ln" name="ln" placeholder="Correu electrònic"></td>
+                </tr>
+                <tr>
+                    <td><label for="msg">Missatge</label></td>
+                    <td><input type="text" id="msg" name="Missatge"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
