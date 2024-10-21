@@ -21,19 +21,26 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         table {
             width: 100%;
         }
-
         td {
-            padding: 10px;
-            vertical-align: middle;
+            padding: 8px;
+            vertical-align: top;
         }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ccc;
         }
     </style>
 </head>
@@ -42,20 +49,21 @@
         <form>
             <table>
                 <tr>
-                    <td><label for="fn">Nom</label></td>
+                    <td><label for="fn">Nom:</label></td>
                     <td><input type="text" id="fn" name="fn" placeholder="Nom"></td>
                 </tr>
                 <tr>
-                    <td><label for="ln">Correu electrònic</label></td>
+                    <td><label for="ln">Correu electrònic:</label></td>
                     <td><input type="text" id="ln" name="ln" placeholder="Correu electrònic"></td>
                 </tr>
                 <tr>
-                    <td><label for="msg">Missatge</label></td>
-                    <td><input type="text" id="msg" name="Missatge"></td>
+                    <td><label for="msg">Missatge:</label></td>
+                    <td><textarea id="msg" name="msg" rows="4" placeholder="Escriu el teu missatge aquí..."></textarea></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Enviar"></td>
+                    <td><textarea name=add rows=3 cols=20 placeholder="Missatge"
+                    wrap></textarea></td>
                 </tr>
             </table>
         </form>
