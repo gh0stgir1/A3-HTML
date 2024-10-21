@@ -27,40 +27,40 @@
             width: 100%;
         }
         td {
-            padding: 0px;
+            padding: 0; /* Eliminado padding para un mejor ajuste */
             vertical-align: top;
         }
         label {
-            margin-bottom: 0; 
-            display: inline-block;
+            margin: 0; /* Eliminado margen */
+            display: inline-block; /* Asegura que la etiqueta y el input estén en la misma línea */
         }
         input, textarea {
-            width: calc(100% - 10px);
-            padding: 5px;
+            width: calc(100% - 10px); /* Ajustado para evitar el overflow */
+            padding: 5px; /* Un padding mínimo */
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
             resize: none;
-            height: 30px;
+            height: 30px; /* Ajustar la altura de los inputs */
+        }
+        textarea {
+            height: auto; /* La altura se ajustará automáticamente */
         }
         input[type="submit"] {
             background-color: #e0e0e0;
-        }
-         textarea {
-            height: auto; 
+            padding: 5px 10px; /* Ajustar el padding para reducir el tamaño */
+            height: 25px; /* Altura del botón */
+            border: none; /* Sin borde adicional */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar por encima */
+            margin-top: 10px; /* Añadir un margen superior para espacio con el resto de la tabla */
         }
         input[type="submit"]:hover {
             background-color: #ccc;
-            padding: 5px 10px; 
-            height: 25px;
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer;
-            margin-top: 10px;
         }
-         .button-container {
-            text-align: right; 
-            margin-top: 10px;
+        .button-container {
+            text-align: right; /* Alinear el botón a la derecha */
+            margin-top: 10px; /* Espacio superior para separar del contenido */
         }
     </style>
 </head>
@@ -82,15 +82,16 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><textarea name=add rows=3 cols=20 placeholder="Missatge"
-                    wrap></textarea></td>
-                <tr></tr>
+                    <td><textarea name="add" rows="3" cols="20" placeholder="Missatge" wrap></textarea></td>
+                </tr>
                 <tr>
-                    <td> class="button-container">
-                        <input type="submit" value="enviar"></td>
+                    <td colspan="2" class="button-container">
+                        <input type="submit" value="enviar">
+                    </td>
                 </tr>
             </table>
         </form>
     </div>
 </body>
 </html>
+
