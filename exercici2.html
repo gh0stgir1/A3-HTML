@@ -3,65 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6e6fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #f0f0f0;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <title>Formulari</title>
 </head>
 <body>
-
-    <form action="#" method="POST">
-        <label for="name">Nom:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Missatge:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <input type="submit" value="Enviar">
-    </form>
-
+    <table>
+        <tr>
+        <td></td>
+        <td>Nom</td>
+        <td><input type=text name=fn placeholder="Nom"></td>
+        </tr><tr>
+        <td>Correu electronic</td>
+        <td><input type=text name=ln placeholder="Correu electronic"></td>
+        </tr> <tr>
+        <td>Missatge</td>
+        <td><input type=text name=Missatge></td>
+        </tr><tr>
+            <td></td>
+            <td><input type=submit value=enviar></td>
+    </table>
 </body>
 </html>
