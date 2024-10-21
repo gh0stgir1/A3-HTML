@@ -28,13 +28,17 @@
         }
         td {
             padding: 10px 0;
-            vertical-align: middle;
+            vertical-align: top;
         }
         label {
             display: inline-block;
             width: 140px;
             text-align: right;
             margin-right: 10px;
+        }
+        .multiline-label {
+            display: inline-block;
+            text-align: right;
         }
         input, textarea {
             width: 200px;
@@ -75,7 +79,7 @@
                     <td><input type="text" id="fn" name="fn" placeholder="Nom"></td>
                 </tr>
                 <tr>
-                    <td><label for="ln">Correu electrònic:</label></td>
+                   <td><label class="multiline-label" for="ln">Correu<br>electrònic:</label></td>
                     <td><input type="text" id="ln" name="ln" placeholder="Correu electrònic"></td>
                 </tr>
                 <tr>
