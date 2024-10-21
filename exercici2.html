@@ -32,6 +32,7 @@
         }
         label {
             margin-bottom: 0; 
+            display: inline-block;
         }
         input, textarea {
             width: calc(100% - 10px);
@@ -55,7 +56,11 @@
             border: none; 
             border-radius: 5px; 
             cursor: pointer;
+            margin-top: 10px;
         }
+         .button-container {
+            text-align: right; 
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -81,7 +86,8 @@
                     wrap></textarea></td>
                 <tr></tr>
                 <tr>
-                    <td><input type=submit value=enviar></td>
+                    <td>s="button-container">
+                    <input type="submit" value="enviar"></td>
                 </tr>
             </table>
         </form>
