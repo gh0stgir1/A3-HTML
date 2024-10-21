@@ -16,6 +16,10 @@
         th {
             background-color: #d5e288;
         }
+        img {
+            display: block;  /* Asegura que cada imagen ocupe una línea completa */
+            margin: 10px auto; /* Centra las imágenes y agrega espacio */
+        }
     </style>
 </head>
 <body>
@@ -26,16 +30,26 @@
         <li><a href="#footer">Ves al final de la pàgina</a></li>
         <li><a href="#top">Torna a l'inici de la pàgina</a></li>
     </ul>
+
     <div class="footer" id="footer">
         <a href="#top">Torna a l'inici de la pàgina</a>
     </div>
 
-    <img src="https://i.blogs.es/5db7f9/calendario/450_1000.jpg" alt="Calendario" width="200">
-    <h2>Imatge amb enllaç</h2>
-    <img src="https://t4.ftcdn.net/jpg/02/09/65/05/360_F_209650573_aqlaXMxoBDMaXck0WQmnBryltJIwpK6F.jpg" alt="WOW" width="200">
+    <!-- Primera imagen -->
+    <div>
+        <img src="https://i.blogs.es/5db7f9/calendario/450_1000.jpg" alt="Calendario" width="200">
+    </div>
 
-    <h2>Final de la pàgina</h2> 
-    
+    <!-- Texto entre imágenes -->
+    <h2>Imatge amb enllaç</h2>
+
+    <!-- Segunda imagen -->
+    <div>
+        <img src="https://t4.ftcdn.net/jpg/02/09/65/05/360_F_209650573_aqlaXMxoBDMaXck0WQmnBryltJIwpK6F.jpg" alt="WOW" width="200">
+    </div>
+
+    <h2>Final de la pàgina</h2>
+
     <div id="top">
         <p><a href="#top">Torna a l'inici de la pàgina</a></p>
     </div>
